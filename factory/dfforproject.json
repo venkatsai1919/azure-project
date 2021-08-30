@@ -1,0 +1,9 @@
+{
+	"name": "dfforproject",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "39ffaf81-e97e-45fb-b31e-7602a51379b2",
+		"tenantId": "604c1504-c6a3-4080-81aa-b33091104187"
+	}
+}
