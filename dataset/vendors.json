@@ -1,5 +1,5 @@
 {
-	"name": "customer",
+	"name": "vendors",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "inputBlobStorage2",
@@ -10,7 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"fileName": "customer.csv",
+				"fileName": "vendor.csv",
 				"container": "inputs"
 			},
 			"columnDelimiter": ",",
@@ -20,51 +20,39 @@
 		},
 		"schema": [
 			{
-				"name": "first_name",
+				"name": "vendor_name",
 				"type": "String"
 			},
 			{
-				"name": "middle_name",
+				"name": "vendor_ssn",
 				"type": "String"
 			},
 			{
-				"name": "last_name",
+				"name": "vendor_street_name",
 				"type": "String"
 			},
 			{
-				"name": "SSN",
+				"name": "vendor_city",
 				"type": "String"
 			},
 			{
-				"name": "apt_no",
+				"name": "vendor_state",
 				"type": "String"
 			},
 			{
-				"name": "street_name",
+				"name": "vendor_country",
 				"type": "String"
 			},
 			{
-				"name": "cust_city",
+				"name": "vendor_zip",
 				"type": "String"
 			},
 			{
-				"name": "cust_state",
+				"name": "vendor_email",
 				"type": "String"
 			},
 			{
-				"name": "cust_country",
-				"type": "String"
-			},
-			{
-				"name": "cust_zip",
-				"type": "String"
-			},
-			{
-				"name": "cust_phone",
-				"type": "String"
-			},
-			{
-				"name": "cust_email",
+				"name": "vendor_phone",
 				"type": "String"
 			}
 		]

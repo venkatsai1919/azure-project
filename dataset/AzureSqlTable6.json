@@ -1,5 +1,5 @@
 {
-	"name": "AzureSqlTable1",
+	"name": "AzureSqlTable6",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureSqlDatabase2",
@@ -14,55 +14,61 @@
 				"precision": 10
 			},
 			{
-				"name": "CUST_F_NAME",
-				"type": "varchar"
-			},
-			{
-				"name": "CUST_M_NAME",
-				"type": "varchar"
-			},
-			{
-				"name": "CUST_L_NAME",
-				"type": "varchar"
-			},
-			{
 				"name": "CUST_SSN",
 				"type": "int",
 				"precision": 10
 			},
 			{
-				"name": "CUST_STREET",
-				"type": "varchar"
-			},
-			{
-				"name": "CUST_CITY",
-				"type": "varchar"
-			},
-			{
-				"name": "CUST_STATE",
-				"type": "varchar"
-			},
-			{
-				"name": "CUST_COUNTRY",
-				"type": "varchar"
-			},
-			{
-				"name": "CUST_ZIP",
+				"name": "Vendor_ID",
 				"type": "int",
 				"precision": 10
 			},
 			{
-				"name": "CUST_PHONE",
+				"name": "Vendor_NAME",
 				"type": "varchar"
 			},
 			{
-				"name": "CUST_EMAIL",
+				"name": "VENDOR_SSN",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Geography_ID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Geography_NAME",
 				"type": "varchar"
+			},
+			{
+				"name": "Part_ID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "part_NAME",
+				"type": "varchar"
+			},
+			{
+				"name": "No_of_part",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "price",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "tOTAL_PRICE",
+				"type": "int",
+				"precision": 10
 			}
 		],
 		"typeProperties": {
 			"schema": "dbo",
-			"table": "CDW_SAPP_D_CUSTOMER"
+			"table": "CDW_SAPP_F_PART_SALE_FACT"
 		}
 	},
 	"type": "Microsoft.DataFactory/factories/datasets"

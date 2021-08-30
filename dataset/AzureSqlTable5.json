@@ -1,0 +1,37 @@
+{
+	"name": "AzureSqlTable5",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase2",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "Vendor_ID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Vendor_Ssn",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Part_ID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "part_NAME",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "CDW_SAPP_D_Vendor_parts"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

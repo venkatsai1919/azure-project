@@ -1,5 +1,5 @@
 {
-	"name": "AzureSqlTable1",
+	"name": "AzureSqlTable2",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureSqlDatabase2",
@@ -9,60 +9,52 @@
 		"type": "AzureSqlTable",
 		"schema": [
 			{
-				"name": "CUST_ID",
+				"name": "Vendor_ID",
 				"type": "int",
 				"precision": 10
 			},
 			{
-				"name": "CUST_F_NAME",
+				"name": "Vendor_NAME",
 				"type": "varchar"
 			},
 			{
-				"name": "CUST_M_NAME",
-				"type": "varchar"
-			},
-			{
-				"name": "CUST_L_NAME",
-				"type": "varchar"
-			},
-			{
-				"name": "CUST_SSN",
+				"name": "VENDOR_SSN",
 				"type": "int",
 				"precision": 10
 			},
 			{
-				"name": "CUST_STREET",
+				"name": "Vendor_streetname",
 				"type": "varchar"
 			},
 			{
-				"name": "CUST_CITY",
+				"name": "Vendor_CITY",
 				"type": "varchar"
 			},
 			{
-				"name": "CUST_STATE",
+				"name": "Vendor_STATE",
 				"type": "varchar"
 			},
 			{
-				"name": "CUST_COUNTRY",
+				"name": "Vendor_COUNTRY",
 				"type": "varchar"
 			},
 			{
-				"name": "CUST_ZIP",
+				"name": "Vendor_ZIP",
 				"type": "int",
 				"precision": 10
 			},
 			{
-				"name": "CUST_PHONE",
+				"name": "Vendor_Phone",
 				"type": "varchar"
 			},
 			{
-				"name": "CUST_EMAIL",
+				"name": "Vendor_EMAIL",
 				"type": "varchar"
 			}
 		],
 		"typeProperties": {
 			"schema": "dbo",
-			"table": "CDW_SAPP_D_CUSTOMER"
+			"table": "CDW_SAPP_D_VENDORS"
 		}
 	},
 	"type": "Microsoft.DataFactory/factories/datasets"

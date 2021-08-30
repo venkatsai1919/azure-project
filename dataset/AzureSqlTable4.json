@@ -1,0 +1,37 @@
+{
+	"name": "AzureSqlTable4",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase2",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "Part_ID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "part_NAME",
+				"type": "varchar"
+			},
+			{
+				"name": "No_of_part",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "price",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "CDW_SAPP_D_PART"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

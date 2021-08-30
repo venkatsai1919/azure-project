@@ -1,0 +1,33 @@
+{
+	"name": "vendorparts",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "inputBlobStorage2",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "vendor_parts.csv",
+				"container": "inputs"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "vendor_ssn",
+				"type": "String"
+			},
+			{
+				"name": "part_id",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

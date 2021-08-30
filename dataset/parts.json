@@ -1,0 +1,41 @@
+{
+	"name": "parts",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "inputBlobStorage2",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "part.csv",
+				"container": "inputs"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "part_id",
+				"type": "String"
+			},
+			{
+				"name": "part_name",
+				"type": "String"
+			},
+			{
+				"name": "no_of_parts",
+				"type": "String"
+			},
+			{
+				"name": "price",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

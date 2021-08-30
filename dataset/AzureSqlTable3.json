@@ -1,0 +1,27 @@
+{
+	"name": "AzureSqlTable3",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase2",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "Geography_ID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Geography_NAME",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "CDW_SAPP_D_Geography"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
