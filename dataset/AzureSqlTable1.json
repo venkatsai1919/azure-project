@@ -1,0 +1,68 @@
+{
+	"name": "AzureSqlTable1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "CUST_ID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "CUST_F_NAME",
+				"type": "varchar"
+			},
+			{
+				"name": "CUST_M_NAME",
+				"type": "varchar"
+			},
+			{
+				"name": "CUST_L_NAME",
+				"type": "varchar"
+			},
+			{
+				"name": "CUST_SSN",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "CUST_STREET",
+				"type": "varchar"
+			},
+			{
+				"name": "CUST_CITY",
+				"type": "varchar"
+			},
+			{
+				"name": "CUST_STATE",
+				"type": "varchar"
+			},
+			{
+				"name": "CUST_COUNTRY",
+				"type": "varchar"
+			},
+			{
+				"name": "CUST_ZIP",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "CUST_PHONE",
+				"type": "varchar"
+			},
+			{
+				"name": "CUST_EMAIL",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "CDW_SAPP_D_CUSTOMER"
+		}
+	}
+}
