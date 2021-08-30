@@ -7,13 +7,13 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "dfforproject"
 		},
-		"inputBlobStorage1_connectionString": {
+		"AzureSqlDatabase2_connectionString": {
 			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'inputBlobStorage1'"
+			"metadata": "Secure string for 'connectionString' of 'AzureSqlDatabase2'"
 		},
-		"AzureSqlDatabase1_connectionString": {
+		"inputBlobStorage2_connectionString": {
 			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'AzureSqlDatabase1'"
+			"metadata": "Secure string for 'connectionString' of 'inputBlobStorage2'"
 		},
 		"containerUri": {
 			"type": "string",
@@ -42,11 +42,11 @@
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
 					},
-					"inputBlobStorage1_connectionString": {
-						"value": "[parameters('inputBlobStorage1_connectionString')]"
+					"AzureSqlDatabase2_connectionString": {
+						"value": "[parameters('AzureSqlDatabase2_connectionString')]"
 					},
-					"AzureSqlDatabase1_connectionString": {
-						"value": "[parameters('AzureSqlDatabase1_connectionString')]"
+					"inputBlobStorage2_connectionString": {
+						"value": "[parameters('inputBlobStorage2_connectionString')]"
 					}
 				}
 			},

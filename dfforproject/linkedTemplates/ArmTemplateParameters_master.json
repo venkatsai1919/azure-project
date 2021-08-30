@@ -5,10 +5,10 @@
 		"factoryName": {
 			"value": "dfforproject"
 		},
-		"inputBlobStorage1_connectionString": {
+		"AzureSqlDatabase2_connectionString": {
 			"value": ""
 		},
-		"AzureSqlDatabase1_connectionString": {
+		"inputBlobStorage2_connectionString": {
 			"value": ""
 		},
 		"containerUri": {
